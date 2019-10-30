@@ -118,3 +118,11 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# git stuff
+
+[ -f /usr/share/bash-completion/completions/git ] && source /usr/share/bash-completion/completions/git
+#[ ! -f ~/.git-prompt.sh ] && wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -O .git-prompt.sh
+source ~/.git-prompt.sh
+export PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+export GIT_PS1_SHOWCOLORHINTS="x"
