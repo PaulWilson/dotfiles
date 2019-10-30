@@ -1,0 +1,11 @@
+[user]
+	# set in ~/.gitconfig_local
+[include]
+	path = ~/.gitconfig_local
+[alias]
+	a = add
+	s = status
+	b = branch
+	p = pull
+	o = checkout
+	m = merge
